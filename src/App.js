@@ -8,11 +8,11 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <dizv className="App">
+                <div className="App">
                     Router.
                     <Route exact path={"/"} component={Home}/>
                     <Route exact path={"/profile"} component={Profile}/>
-                </dizv>
+                </div>
             </Router>
         );
     }
