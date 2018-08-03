@@ -1,12 +1,11 @@
 import React from "react";
-import Searcher from "../../components/searcher/Searcher";
+import SearchContainer from "../../components/searchContainer/SearchContainer";
 
 const Home = ({}) => {
     return (
         <div>
             <header>
-                Searching for something?
-                <Searcher initialValue={"hello"} onEnter={(stateValues)=>alert(`Hello ${stateValues.searchQuery}!`)}/>
+                <SearchContainer />
             </header>
 
         </div>
