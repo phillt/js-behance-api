@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Searcher from "../searcher/Searcher";
 import {withRouter} from "react-router-dom";
+import env from "../../env.js";
 
 
 class SearchContainer extends Component {
@@ -13,9 +14,10 @@ class SearchContainer extends Component {
     handleOnEnter(searcherState) {
         // convert to search query
         // push to new link
+        if (!searcherState) return;
         const historyObject = {
             pathname: '/',
-            search: `?q=${encodeURI(searcherState.searchQuery)}`
+            search: `?q=${encodeURI(searcherState.searchQuery)}&client_id=${env.apiKey}`
         };
 
         this.props.history.push(historyObject);
