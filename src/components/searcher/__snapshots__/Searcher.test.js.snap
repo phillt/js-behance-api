@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher Default value is set when initialValue prop is created 1`] = `
+<div>
+  <label>
+    Search
+    <input
+      name="searchQuery"
+      onChange={[Function]}
+      onKeyUp={[Function]}
+      type="text"
+      value="hello"
+    />
+  </label>
+</div>
+`;
